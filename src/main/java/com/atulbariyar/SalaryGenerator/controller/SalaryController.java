@@ -233,7 +233,7 @@ public class SalaryController {
     }
 
     @GetMapping("/list")
-    public ResponseEntity<?> listSalaries(@RequestParam String month) {
+    public ResponseEntity<?> listSalaries(@RequestParam String month) throws Exception {
         String range = month + "!A2:H";
         List<List<Object>> sheetData = sheetService.readData(range);
 
