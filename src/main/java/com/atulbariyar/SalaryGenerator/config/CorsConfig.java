@@ -18,7 +18,7 @@ public class CorsConfig {
                 registry.addMapping("/**")
                         .allowedOrigins(
                                 "http://localhost:5173",
-                                "https://salarydashboard.vercel.app" // your frontend URL
+                                "https://salarygenerator.netlify.app/" // your frontend URL
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
